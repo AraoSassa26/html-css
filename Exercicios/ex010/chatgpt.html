@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baixar Arquivo</title>
+</head>
+<body>
+
+    <h1>Baixar Desafio Mensagens</h1>
+
+    <!-- Botão de download -->
+    <button id="downloadBtn">Baixar em PDF</button>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            // Criação de um link dinamicamente para iniciar o download
+            const link = document.createElement('a');
+            link.href = 'livros/1.desafio-mensagens.pdf'; // Caminho para o arquivo PDF
+            link.download = 'Desafio Mensagens.pdf'; // Nome personalizado para o arquivo baixado
+            document.body.appendChild(link); // Adiciona o link ao DOM
+            link.click(); // Simula o clique no link para iniciar o download
+            document.body.removeChild(link); // Remove o link após o download
+        });
+    </script>
+
+</body>
+</html>

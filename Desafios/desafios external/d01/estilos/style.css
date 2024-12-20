@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/RobotoCondensed-VariableFont_wght.ttf')format('truetype');
+}
+:root{
+--ilustracao-1: #0F5AF2; 
+--ilustracao-2: #1374F2; 
+--ilustracao-3: #168BF2; 
+--ilustracao-4: #03A66A; 
+--ilustracao-5: #F2B90F; 
+
+--fonte-padrao:Arial , Helvetica , Sans-serif;
+--font-alternativa:'Roboto' , 'cursive'; 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+body{
+    font: normal normal 1em var(--fonte-padrao);
+    background-color: var(--ilustracao-3);
+}
+header{
+    background-color: var(--ilustracao-1);
+    font: normal normal 2em Roboto;
+    padding: 20px;
+}
+header a {
+    color: var(--ilustracao-5);
+    text-decoration: none;
+}
+
+nav{
+    background-color: var(--ilustracao-2);
+    font-family: Roboto;
+    text-align: right;
+    padding: 10px;
+    
+}
+nav a{
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    
+    
+}
+nav a:hover{
+    background-color: var(--ilustracao-3);
+    color: var(--ilustracao-5);
+    
+}
+
+   
+
+article{
+    
+    background-color: white;
+    text-align: justify;
+    text-indent: 1px;
+    width: 1000px;
+    margin: auto;
+    box-shadow: 1px 1px 1px black;
+
+}
+
+footer{
+    background-color: var(--ilustracao-1);
+    
+}
+footer p{
+    color: var(--ilustracao-5);
+    text-align: center;
+    font: normal bold 1em 'Roboto';
+}

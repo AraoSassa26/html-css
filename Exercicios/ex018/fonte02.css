@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: xvideos;
+    src: url('fonts/Mf love Song.ttf') format('truetype');
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    font-family: 'xvideos', Times, serif;
+    font-size: 3em;
+}
+p{
+    font-family: 'xvideos', Times, serif;
+    font-size: 2em;
+}
+

@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Bebas;
+    src: url('/fontes/BebasNeue-Regular.ttf')format('truetype');
+}
+@font-face {
+    font-family: Poppins;
+    src: url('/fontes/Poppins-Bold.ttf')format('truetype');
+}
+:root{
+
+     /* Minhas Fontes*/
+    --font_padrao:Arial , Helvetica , Sans-serif;
+    --font_bebas:'Bebas' , Cursive;
+    --font_poppins:'Poppins', Sans-serif;
+
+    /* Minha Paleta de cores*/
+    --cor01:#3779c4;
+    --cor02:#87b8f0;
+    --cor03:#061a31;
+    --cor04:#29333f;
+    --cor05:#bcd4f1af;
+    
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor05);
+    font: normal normal 1em var(--font_padrao);
+}
+header{
+    font: normal normal 2em 'Bebas';
+    background-image: linear-gradient(to bottom,var(--cor02),var(--cor01));
+    color: white;
+    text-shadow: 2px 3px 4px black;
+    text-align: center;
+    padding: 10px;
+}
+
+header>h1:hover{
+    color: red;
+}
+nav{
+    background-color: var(--cor02);
+    text-align: right;
+    padding: 10px;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    font-size: 1.2em;
+}
+nav a:hover{
+    text-decoration: underline;
+    background-color: var(--cor02);
+    color: var(--cor03
+    );
+}
+main{
+    background-color: white;
+    text-align: justify;
+   width: 800px;
+    margin: auto;
+}
+main h1{
+    background-image: linear-gradient(to right , var(--cor01) , transparent);
+    color:white;
+}
+main h2{
+    background-image: linear-gradient(to right , var(--cor01) , transparent);
+    color:white;
+}
+footer{
+    background-color: var(--cor01);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
