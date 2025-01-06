@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+:root{
+    /* Minha Paleta de cores */
+ --color1: #4B72A6; 
+ --color2: #A6896F; 
+ --color3: #BFAE9F; 
+ --color4: #8C4B26; 
+ --color5: #732002; 
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font: normal normal 1em Arial , Helvetica , Sans-serif;
+}
+body{
+    background-color: var(--color1);
+}
+header{
+   font: bold normal 2em 'Courier New', Courier, monospace; ;
+   background-color: var();
+
+
+}
