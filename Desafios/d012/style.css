@@ -15,45 +15,51 @@
 
 *{
     margin: 0px;
+    padding: 0px;
 }
-body{
-    
+html , body{
+    background-color: darkgray;
+    min-height: 100vh;
+
 }
-header{
+header , footer{
     background-color: black;
-    color: white;
     text-align: center;
-    font: normal normal 1em 'PassionOne ',Cursive;
-}
-
-main{
-    font-family:  'Sriracha', Cursive;
-    
-}
-
-.imagem_de_fundo{
-    background-image: url(imagens/background001.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    color: white;
-
-}
-
-
-.imagem_de_fundo2{
-    background-image: url(imagens/background002.jpg);
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
     color: white;
 }
-footer{
-    background-color: black;
+header h1{
+    padding: top 50px; ;
+    font-variant: small-caps;
+}
+header p{
+    padding-bottom: 50px;
+}
+a{
     color: white;
-    text-align: center;
-    font: normal normal 1em 'PassionOne ',Cursive;
-    
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgba(170, 169, 169, 0.329);
+}
+section{
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.226);
+    width: 400px;
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-color: rgb(51, 51, 51);
+}
+
+footer {
+    padding: 10px;
 }
