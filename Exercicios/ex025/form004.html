@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    fieldset{
+       text-align: center;
+    }
+   
+</style>
+<body>
+    <h1>Exemplo de formulario</h1>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <form action="#" method="get" autocomplete="on">
+            <p>
+                <label for="i_email">E-mail</label>
+                <input type="email" name="email" id="i_email" required autocomplete="email">
+            </p>
+            <p>
+                <!-- Esse código foi baseado em numero angolanos -->
+                <label for="i_tel">Telefone</label>
+                <input type="tel" name="tel" id="i_tel" required autocomplete="tel" pattern="\(\+244)\s9[1-9]{2}-\d{3}" placeholder="(+244) XXX-XXX-XXX">
+                <!-- Aprender mais sobre RegEX -->
+            </p>
+    </fieldset>
+        <p>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limapr</button>
+        </p>
+    </form>
+</body>
+</html>
