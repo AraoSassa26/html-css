@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        <p>
+            <label for="i_provincia">Provincia</label>
+            <select name="Provincia" id="i_provincia">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Norte">
+                    <option value="Cabinda">Cabinda</option>
+                    <option value="Zaire">Zaire</option>
+                    <option value="Uíge">Uíge</option>
+                    <option value="Bengo">Bengo</option>
+                    <option value="Luanda">Luanda</option>
+                    <option value="Cuanza Norte">Cuanza Norte</option>
+                    <option value="Malanje">Malanje</option>
+
+                </optgroup>
+                <optgroup label="Região Centro">
+                    <option value="Cuanza Sul">Cuanza Sul</option>
+                    <option value="Huambo">Huambo</option>
+                    <option value="Bié">Bié</option>
+                    <option value="Benguela">Benguela</option>
+                    
+
+                </optgroup>
+                <optgroup label="Região Leste">
+                    <option value="Lunda Norte">Lunda Norte</option>
+                    <option value="Lunda Sul">Lunda Sul</option>
+                    <option value="Moxico">Moxico</option>
+                </optgroup>
+            </select>
+        </p>
+    </form>
+    
+</body>
+</html>
