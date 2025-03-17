@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <div class="input">
+            <label for="ano_nasc">Em que ano você Nasceu?</label>
+            <input type="number" name="ano_nasc" id="ano_nasc" oninput="calcIdade()" min="2000" max="2030">
+            
+        </div>
+        <div class="output">
+            <label for="i_idade">---</label>
+            <output id="i_idade"></output>
+        </div>
+    </form>
+    <script>
+        function calcIdade(){
+            var anoNascimento = document.getElementById("ano_nasc").value; // Declaramos uma variavel #anoNascimento para receber os dados do input ano_nasc e já formatamos com .value  , dessa forma é mais eficaz , e o uso da div obriga a fazermos isso!!!
+
+            var anoAtual = new Date().getFullYear(); //Aqui declarei a variavel anoAtual que recebe o ano em curso através do comando new Date().getFullYear();
+               
+                i_idade.innerHTML = anoAtual - anoNascimento; // aqui será exibido no output o AnoAtual , que declaramos acima e o - anoNascimento , que vai ser o ano que estará no input
+        }
+    </script>
+    
+    
+</body>
+</html>
